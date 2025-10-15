@@ -1,8 +1,8 @@
 
-name: Daily Refresh (9am CT)
+name: Daily Refresh (8am CT)
 on:
   schedule:
-    - cron: "0 14 * * *"
+    - cron: "0 13 * * *"
   workflow_dispatch:
 
 permissions:
