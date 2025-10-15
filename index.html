@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Tools Leaderboard – Created for Brian T.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h1>AI Tools Leaderboard – Created for Brian T.</h1>
+      <div class="small">Portrait layout · Print to one page</div>
+      <div class="small">Last updated: <span id="ts"></span></div>
+      <ul id="criteria" class="crit"></ul>
+      <div class="news">
+        <h3>Top 5 AI News</h3>
+        <ul id="news"></ul>
+      </div>
+    </div>
+    <div>
+      <span class="badge">LLM</span>
+      <span class="badge">Image</span>
+      <span class="badge">Video</span>
+      <span class="badge">Audio</span>
+      <span class="badge">Multi‑Modal</span>
+    </div>
+  </div>
+
+  <div id="content"></div>
+
+  <div class="footer">© 2025 Created for Brian T.</div>
+
+  <script>
+  async function main(){
+    const res = await fetch('leaderboard.json?_=' + Date.now());
+    const data = await res.json();
+    document.getElementById('ts').textContent = data.timestamp;
+    const critRoot = document.getElementById('criteria');
+    data.criteria.forEach(c => {
+      const li = document.createElement('li'); li.textContent = c; critRoot.appendChild(li);
+    });
+    const newsRoot = document.getElementById('news');
+    data.news.forEach(n => {
+      const li = document.createElement('li');
+      li.innerHTML = `<strong>${n.title}</strong> — <em>${n.date}</em>: ${n.summary} <a href="${n.url}" target="_blank" rel="noopener">Source</a>`;
+      newsRoot.appendChild(li);
+    });
+
+    const root = document.getElementById('content');
+    data.categories.forEach(cat => {
+      const section = document.createElement('div'); section.className='section';
+      section.innerHTML = `<h2>${cat.name}</h2>`;
+      const table = document.createElement('table');
+      table.innerHTML = `
+        <thead>
+          <tr>
+            <th class="rank">Rank</th>
+            <th class="tool">Tool</th>
+            <th class="best">Best For</th>
+            <th class="new">What's New</th>
+            <th class="hl">Highlights (Pro / Con)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>`;
+      const tbody = table.querySelector('tbody');
+      cat.rows.forEach(r => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td class="rank">${r.rank}</td>
+          <td class="tool"><strong>${r.tool}</strong></td>
+          <td class="best">${r.bestFor}</td>
+          <td class="new">${r.whatsNew}</td>
+          <td class="hl">${r.highlights}</td>`;
+        tbody.appendChild(tr);
+      });
+      section.appendChild(table);
+      root.appendChild(section);
+    });
+  }
+  main();
+  </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+{
+  "timestamp": "October 15, 2025 \u2013 02:15 PM CT",
+  "criteria": [
+    "Popularity (30%) \u2013 adoption & sentiment",
+    "Performance (25%) \u2013 reasoning / realism / accuracy",
+    "Cost (15%) \u2013 affordability & scalability",
+    "Privacy (15%) \u2013 data handling & likeness protection",
+    "Innovation (15%) \u2013 multimodal capability & ecosystem growth"
+  ],
+  "news": [
+    {
+      "title": "OpenAI releases Sora 2 (video+audio)",
+      "date": "Sep 30, 2025",
+      "summary": "More accurate physics, sharper realism, synchronized dialogue and sound effects; improved steerability.",
+      "url": "https://openai.com/index/sora-2/"
+    },
+    {
+      "title": "OpenAI Realtime API updates for voice agents",
+      "date": "Aug 28, 2025",
+      "summary": "New speech-to-speech model, MCP server support, image input, and SIP phone calling.",
+      "url": "https://openai.com/index/introducing-gpt-realtime/"
+    },
+    {
+      "title": "Gemini API: 2.5 Computer Use Preview + 2.5 Flash Image GA",
+      "date": "Oct 7, 2025",
+      "summary": "Google expands multimodal developer features including computer control and image generation.",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog"
+    },
+    {
+      "title": "Anthropic: context management + memory (Sonnet 4.5 era)",
+      "date": "Sep 29, 2025",
+      "summary": "Claude platform adds context editing and a memory tool for longer-running tasks.",
+      "url": "https://www.anthropic.com/news/context-management"
+    },
+    {
+      "title": "DeepMind Veo updates toward longer video",
+      "date": "Oct 2025",
+      "summary": "New Veo versions aim for multi-shot, longer durations, and improved character consistency.",
+      "url": "https://deepmind.google/models/veo/"
+    }
+  ],
+  "categories": [
+    {
+      "name": "LLM / Text",
+      "rows": [
+        {
+          "rank": "1st",
+          "tool": "ChatGPT (GPT-4o)",
+          "bestFor": "Workflow automation, consulting insights, rapid prototyping",
+          "whatsNew": "Adds live voice & vision input; faster API speed",
+          "highlights": "Pro: Fast, multimodal, creative ecosystem. Con: Occasional hallucinations; online-only."
+        },
+        {
+          "rank": "2nd",
+          "tool": "Claude 3 (Opus/Sonnet)",
+          "bestFor": "Analytical writing, structured docs, strategic reasoning",
+          "whatsNew": "Context window expanded to 200k+ tokens",
+          "highlights": "Pro: Superior reasoning & safety. Con: Less creative for marketing."
+        },
+        {
+          "rank": "3rd",
+          "tool": "Gemini 1.5 (Pro/Ultra)",
+          "bestFor": "Engineering collaboration, Workspace integration",
+          "whatsNew": "Now supports real-time multimodal input",
+          "highlights": "Pro: Excellent code + Google integration. Con: Limited rollout regions."
+        }
+      ]
+    },
+    {
+      "name": "Image / Vision",
+      "rows": [
+        {
+          "rank": "1st",
+          "tool": "Midjourney v6",
+          "bestFor": "Marketing visuals, storytelling imagery",
+          "whatsNew": "Adds text rendering & improved facial realism",
+          "highlights": "Pro: Artistic control & quality. Con: Discord-only; no enterprise API."
+        },
+        {
+          "rank": "2nd",
+          "tool": "DALL\u00b7E 3",
+          "bestFor": "Concept art, mockups, presentations",
+          "whatsNew": "Integrated with edit & mask tools in ChatGPT",
+          "highlights": "Pro: Intuitive prompting & easy access. Con: Slightly less realism."
+        },
+        {
+          "rank": "3rd",
+          "tool": "Stable Diffusion XL",
+          "bestFor": "Enterprise R&D, private/local deployments",
+          "whatsNew": "Adds refiner model & faster inference",
+          "highlights": "Pro: Fully open-source & private. Con: Requires GPU setup."
+        }
+      ]
+    },
+    {
+      "name": "Video / Motion",
+      "rows": [
+        {
+          "rank": "1st",
+          "tool": "Sora 2 (OpenAI)",
+          "bestFor": "Storyboards, marketing videos, cinematics",
+          "whatsNew": "Released Oct 8, 2025; adds physics-aware motion",
+          "highlights": "Pro: Most realistic text-to-video. Con: Limited access; pricing unclear."
+        },
+        {
+          "rank": "2nd",
+          "tool": "Veo 2 (Google DeepMind)",
+          "bestFor": "Enterprise video generation, film pre-viz",
+          "whatsNew": "Adds 4K output & motion blur control",
+          "highlights": "Pro: 4K quality & motion fidelity. Con: Expensive, limited access."
+        },
+        {
+          "rank": "3rd",
+          "tool": "Runway Gen-3",
+          "bestFor": "Fast content creation, marketing snippets",
+          "whatsNew": "Adds custom camera paths & object control",
+          "highlights": "Pro: Easy UI; fast generation. Con: Lower realism; short clips."
+        }
+      ]
+    },
+    {
+      "name": "Audio / Music",
+      "rows": [
+        {
+          "rank": "1st",
+          "tool": "Sun\u014d v3",
+          "bestFor": "Jingles, songwriting, creative projects",
+          "whatsNew": "Adds multi-track layering & faster render",
+          "highlights": "Pro: Natural vocals & melody coherence. Con: Licensing unclear."
+        },
+        {
+          "rank": "2nd",
+          "tool": "ElevenLabs",
+          "bestFor": "Voiceovers, branding, ads",
+          "whatsNew": "Adds Voice Design studio & emotion control",
+          "highlights": "Pro: Realistic voices, tone control. Con: Consent required for cloning."
+        },
+        {
+          "rank": "3rd",
+          "tool": "Udio AI",
+          "bestFor": "Music concepts, short social content",
+          "whatsNew": "Adds beat sync & genre tagging",
+          "highlights": "Pro: Instant creation workflow. Con: Limited editing tools."
+        }
+      ]
+    },
+    {
+      "name": "Multi-Modal / Agentic",
+      "rows": [
+        {
+          "rank": "1st",
+          "tool": "GPT-4o (OpenAI)",
+          "bestFor": "Unified assistants, workflow automation",
+          "whatsNew": "Adds real-time audio & video input (voice mode)",
+          "highlights": "Pro: Broadest multimodal coverage. Con: Memory limits; variable cost."
+        },
+        {
+          "rank": "2nd",
+          "tool": "Gemini 1.5 Ultra",
+          "bestFor": "Enterprise agents, Workspace integration",
+          "whatsNew": "Adds Docs/Sheets AI extensions & code assist",
+          "highlights": "Pro: Smooth multi-modal UX. Con: Some latency & API limitations."
+        },
+        {
+          "rank": "3rd",
+          "tool": "Claude 3 Opus",
+          "bestFor": "Long-form research, analytical assistants",
+          "whatsNew": "Adds tool-use API & memory improvements",
+          "highlights": "Pro: Excellent reasoning, privacy-first. Con: Limited visual capabilities."
+        }
+      ]
+    }
+  ]
+}
