@@ -25,10 +25,6 @@ This repo includes a workflow that runs **daily at 14:00 UTC** (≈ 9:00 AM CT) 
 - Use your browser's **Print** dialog → Layout: **Portrait**; Scale: 90%–100% as needed.
 - The CSS includes print tweaks to keep cells readable.
 
----
-
----
-
 ### 🔄 Re-publish Site
 Need to rebuild or redeploy the leaderboard manually?  
 Click below to trigger a fresh GitHub Pages deployment:
