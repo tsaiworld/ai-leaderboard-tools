@@ -2,13 +2,17 @@
 name: Deploy to GitHub Pages
 on:
   push:
-    branches: [ "main", "master" ]
+    branches: [ "main" ]
   workflow_dispatch:
 
 permissions:
   contents: write
   pages: write
   id-token: write
+
+concurrency:
+  group: ai-leaderboard-pages
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -21,6 +25,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: '.'   # must contain index.html at repo root
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
