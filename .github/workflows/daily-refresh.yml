@@ -11,7 +11,7 @@
 11   id-token: write
 12 
 13 concurrency:
-14   group: ai-leaderboard-pages
+14   group: ai-leaderboard-tools
 15   cancel-in-progress: true
 16 
 17 jobs:
