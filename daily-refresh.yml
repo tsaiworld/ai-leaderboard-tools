@@ -1,13 +1,9 @@
 
-name: Daily Refresh (8am CT)
+name: Daily Refresh (9am CT)
 on:
   schedule:
-    - cron: "0 13 * * *"
+    - cron: "0 14 * * *"
   workflow_dispatch:
-
-concurrency:
-  group: ai-leaderboard-refresh
-  cancel-in-progress: true
 
 permissions:
   contents: write
