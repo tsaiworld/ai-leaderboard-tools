@@ -1,14 +1,18 @@
-
 name: Deploy to GitHub Pages
+
 on:
   push:
-    branches: [ "main", "master" ]
+    branches: [ "main" ]
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
+
+concurrency:
+  group: ai-leaderboard-pages
+  cancel-in-progress: true
 
 jobs:
   deploy:
