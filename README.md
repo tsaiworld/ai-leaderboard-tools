@@ -2,7 +2,7 @@
 # AI Tools Leaderboard – Brian Tsai (Portrait · One-Page · Auto-Refresh)
 
 This is a **static website** you can publish **without Google Drive**. It renders a clean, portrait-style leaderboard and is ready to **print to 1 page**.  
-
+   
 ## Publish in 3 minutes (GitHub Pages)
 1. Create a GitHub repo (e.g., `ai-tools-leaderboard`).
 2. Upload all files in this folder to the repo (keep the `.github/workflows` folder).
