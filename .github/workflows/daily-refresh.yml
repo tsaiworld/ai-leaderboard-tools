@@ -1,46 +1,30 @@
-name: Daily Refresh (auto-update JSON)
-
-on:
-  schedule:
-    - cron: "0 14 * * *"   # 9:00 AM Central (14:00 UTC) – change as needed
-  workflow_dispatch:        # lets you run it manually any time
-
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
-concurrency:
-  group: ai-leaderboard-refresh
-  cancel-in-progress: true
-
-jobs:
-  refresh:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Update leaderboard JSON (timestamp + Top 5 news)
-        run: |
-          python3 update_news.py
-          echo "Updated leaderboard.json:"
-          head -n 40 leaderboard.json || true
-
-      - name: Commit changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add leaderboard.json
-          git commit -m "Daily auto-update leaderboard.json [skip ci]" || echo "No changes to commit"
-          git push
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+ 1 name: Deploy to GitHub Pages
+ 2 
+ 3 on:
+ 4   push:
+ 5     branches: [ "main" ]
+ 6   workflow_dispatch:
+ 7 
+ 8 permissions:
+ 9   contents: write
+10   pages: write
+11   id-token: write
+12 
+13 concurrency:
+14   group: ai-leaderboard-pages
+15   cancel-in-progress: true
+16 
+17 jobs:
+18   deploy:
+19     runs-on: ubuntu-latest
+20     steps:
+21       - name: Checkout
+22         uses: actions/checkout@v4
+23       - name: Setup Pages
+24         uses: actions/configure-pages@v5
+25       - name: Upload artifact
+26         uses: actions/upload-pages-artifact@v3
+27         with:
+28           path: '.'   # must include index.html at repo root
+29       - name: Deploy to GitHub Pages
+30         uses: actions/deploy-pages@v4
