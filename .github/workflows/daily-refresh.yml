@@ -1,8 +1,8 @@
-name: Daily Refresh (auto-update JSON)
+name: Daily Refresh (auto-update JSON + rankings)
 
 on:
   schedule:
-    - cron: "0 18 * * *"   # 9:00 AM CT (14:00 UTC). Change as needed.
+    - cron: "0 18 * * *"   # daily at 9:00 AM Central (14:00 UTC)
   workflow_dispatch:
 
 permissions:
@@ -20,18 +20,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Update leaderboard JSON (timestamp + Top 5 news)
+      - name: Update leaderboard JSON (timestamp, news, rankings)
         run: |
-          python3 update_news.py
-          echo "Updated leaderboard.json (first 40 lines):"
-          head -n 40 leaderboard.json || true
+          python3 update_leaderboard.py
+          echo "Updated leaderboard.json (first 60 lines):"
+          head -n 60 leaderboard.json || true
 
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add leaderboard.json
-          git commit -m "Daily auto-update leaderboard.json [skip ci]" || echo "No changes to commit"
+          git commit -m "Daily auto-update (news + rankings) [skip ci]" || echo "No changes to commit"
           git push
 
       - name: Setup Pages
