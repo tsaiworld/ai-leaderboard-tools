@@ -1,5 +1,5 @@
 {
-  "timestamp": "October 16, 2025 – 05:05 PM UTC",
+  "timestamp": "October 16, 2025 – 05:28 PM UTC",
   "criteria": [
     "Popularity (30%) – adoption & sentiment",
     "Performance (25%) – reasoning / realism / accuracy",
@@ -71,24 +71,24 @@
       "rows": [
         {
           "rank": "1st",
+          "tool": "Stable Diffusion XL",
+          "bestFor": "Enterprise R&D, private/local deployments",
+          "whatsNew": "Adds refiner model & faster inference",
+          "highlights": "Pro: Fully open-source & private. Con: Requires GPU setup."
+        },
+        {
+          "rank": "2nd",
           "tool": "Midjourney v6",
           "bestFor": "Marketing visuals, storytelling imagery",
           "whatsNew": "Adds text rendering & improved facial realism",
           "highlights": "Pro: Artistic control & quality. Con: Discord-only; no enterprise API."
         },
         {
-          "rank": "2nd",
+          "rank": "3rd",
           "tool": "DALL·E 3",
           "bestFor": "Concept art, mockups, presentations",
           "whatsNew": "Integrated with edit & mask tools in ChatGPT",
           "highlights": "Pro: Intuitive prompting & easy access. Con: Slightly less realism."
-        },
-        {
-          "rank": "3rd",
-          "tool": "Stable Diffusion XL",
-          "bestFor": "Enterprise R&D, private/local deployments",
-          "whatsNew": "Adds refiner model & faster inference",
-          "highlights": "Pro: Fully open-source & private. Con: Requires GPU setup."
         }
       ]
     },
@@ -123,17 +123,17 @@
       "rows": [
         {
           "rank": "1st",
-          "tool": "Sunō v3",
-          "bestFor": "Jingles, songwriting, creative projects",
-          "whatsNew": "Adds multi-track layering & faster render",
-          "highlights": "Pro: Natural vocals & melody coherence. Con: Licensing unclear."
-        },
-        {
-          "rank": "2nd",
           "tool": "ElevenLabs",
           "bestFor": "Voiceovers, branding, ads",
           "whatsNew": "Adds Voice Design studio & emotion control",
           "highlights": "Pro: Realistic voices, tone control. Con: Consent required for cloning."
+        },
+        {
+          "rank": "2nd",
+          "tool": "Sunō v3",
+          "bestFor": "Jingles, songwriting, creative projects",
+          "whatsNew": "Adds multi-track layering & faster render",
+          "highlights": "Pro: Natural vocals & melody coherence. Con: Licensing unclear."
         },
         {
           "rank": "3rd",
@@ -156,17 +156,17 @@
         },
         {
           "rank": "2nd",
-          "tool": "Gemini 1.5 Ultra",
-          "bestFor": "Enterprise agents, Workspace integration",
-          "whatsNew": "Adds Docs/Sheets AI extensions & code assist",
-          "highlights": "Pro: Smooth multi-modal UX. Con: Some latency & API limitations."
-        },
-        {
-          "rank": "3rd",
           "tool": "Claude 3 Opus",
           "bestFor": "Long-form research, analytical assistants",
           "whatsNew": "Adds tool-use API & memory improvements",
           "highlights": "Pro: Excellent reasoning, privacy-first. Con: Limited visual capabilities."
+        },
+        {
+          "rank": "3rd",
+          "tool": "Gemini 1.5 Ultra",
+          "bestFor": "Enterprise agents, Workspace integration",
+          "whatsNew": "Adds Docs/Sheets AI extensions & code assist",
+          "highlights": "Pro: Smooth multi-modal UX. Con: Some latency & API limitations."
         }
       ]
     }
