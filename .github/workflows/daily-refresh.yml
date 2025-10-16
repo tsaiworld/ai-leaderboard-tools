@@ -2,7 +2,7 @@ name: Daily Refresh (auto-update JSON + rankings)
 
 on:
   schedule:
-    - cron: "0 18 * * *"   # daily at 9:00 AM Central (14:00 UTC)
+    - cron: "0 19 * * *"   # daily at 9:00 AM Central (14:00 UTC)
   workflow_dispatch:
 
 permissions:
