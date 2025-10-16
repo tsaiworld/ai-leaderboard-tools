@@ -2,7 +2,7 @@ name: Daily Refresh (auto-update JSON)
 
 on:
   schedule:
-    - cron: "0 14 * * *"   # 9:00 AM CT (14:00 UTC). Change as needed.
+    - cron: "0 18 * * *"   # 9:00 AM CT (14:00 UTC). Change as needed.
   workflow_dispatch:
 
 permissions:
