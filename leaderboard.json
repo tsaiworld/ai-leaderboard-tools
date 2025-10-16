@@ -1,42 +1,42 @@
 {
-  "timestamp": "October 16, 2025 \u2013 11:25 PM CT",
+  "timestamp": "October 16, 2025 – 05:05 PM UTC",
   "criteria": [
-    "Popularity (30%) \u2013 adoption & sentiment",
-    "Performance (25%) \u2013 reasoning / realism / accuracy",
-    "Cost (15%) \u2013 affordability & scalability",
-    "Privacy (15%) \u2013 data handling & likeness protection",
-    "Innovation (15%) \u2013 multimodal capability & ecosystem growth"
+    "Popularity (30%) – adoption & sentiment",
+    "Performance (25%) – reasoning / realism / accuracy",
+    "Cost (15%) – affordability & scalability",
+    "Privacy (15%) – data handling & likeness protection",
+    "Innovation (15%) – multimodal capability & ecosystem growth"
   ],
   "news": [
     {
-      "title": "OpenAI releases Sora 2 (video+audio)",
-      "date": "Sep 30, 2025",
-      "summary": "More accurate physics, sharper realism, synchronized dialogue and sound effects; improved steerability.",
-      "url": "https://openai.com/index/sora-2/"
+      "title": "The anatomy of a personal health agent",
+      "date": "Tue, 30 Sep 2025 14:41:00 +0000",
+      "summary": "Generative AI",
+      "url": "https://research.google/blog/the-anatomy-of-a-personal-health-agent/"
     },
     {
-      "title": "OpenAI Realtime API updates for voice agents",
-      "date": "Aug 28, 2025",
-      "summary": "New speech-to-speech model, MCP server support, image input, and SIP phone calling.",
-      "url": "https://openai.com/index/introducing-gpt-realtime/"
+      "title": "Towards better health conversations: Research insights on a “wayfinding” AI agent based on Gemini",
+      "date": "Thu, 25 Sep 2025 10:33:00 +0000",
+      "summary": "Generative AI",
+      "url": "https://research.google/blog/towards-better-health-conversations-research-insights-on-a-wayfinding-ai-agent-based-on-gemini/"
     },
     {
-      "title": "Gemini API: 2.5 Computer Use Preview + 2.5 Flash Image GA",
-      "date": "Oct 7, 2025",
-      "summary": "Google expands multimodal developer features including computer control and image generation.",
-      "url": "https://ai.google.dev/gemini-api/docs/changelog"
+      "title": "AfriMed-QA: Benchmarking large language models for global health",
+      "date": "Wed, 24 Sep 2025 19:11:00 +0000",
+      "summary": "Generative AI",
+      "url": "https://research.google/blog/afrimed-qa-benchmarking-large-language-models-for-global-health/"
     },
     {
-      "title": "Anthropic: context management + memory (Sonnet 4.5 era)",
-      "date": "Sep 29, 2025",
-      "summary": "Claude platform adds context editing and a memory tool for longer-running tasks.",
-      "url": "https://www.anthropic.com/news/context-management"
+      "title": "Time series foundation models can be few-shot learners",
+      "date": "Tue, 23 Sep 2025 18:00:43 +0000",
+      "summary": "Generative AI",
+      "url": "https://research.google/blog/time-series-foundation-models-can-be-few-shot-learners/"
     },
     {
-      "title": "DeepMind Veo updates toward longer video",
-      "date": "Oct 2025",
-      "summary": "New Veo versions aim for multi-shot, longer durations, and improved character consistency.",
-      "url": "https://deepmind.google/models/veo/"
+      "title": "Sensible Agent: A framework for unobtrusive interaction with proactive AR agents",
+      "date": "Thu, 18 Sep 2025 20:10:00 +0000",
+      "summary": "Human-Computer Interaction and Visualization",
+      "url": "https://research.google/blog/sensible-agent-a-framework-for-unobtrusive-interaction-with-proactive-ar-agents/"
     }
   ],
   "categories": [
@@ -78,7 +78,7 @@
         },
         {
           "rank": "2nd",
-          "tool": "DALL\u00b7E 3",
+          "tool": "DALL·E 3",
           "bestFor": "Concept art, mockups, presentations",
           "whatsNew": "Integrated with edit & mask tools in ChatGPT",
           "highlights": "Pro: Intuitive prompting & easy access. Con: Slightly less realism."
@@ -123,7 +123,7 @@
       "rows": [
         {
           "rank": "1st",
-          "tool": "Sun\u014d v3",
+          "tool": "Sunō v3",
           "bestFor": "Jingles, songwriting, creative projects",
           "whatsNew": "Adds multi-track layering & faster render",
           "highlights": "Pro: Natural vocals & melody coherence. Con: Licensing unclear."
