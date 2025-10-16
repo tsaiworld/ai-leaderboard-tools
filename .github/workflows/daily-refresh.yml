@@ -1,0 +1,45 @@
+
+name: Daily Refresh (9am CT)
+on:
+  schedule:
+    - cron: "0 14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Update timestamp in leaderboard.json
+        run: |
+          python - << 'PY'
+import json, datetime
+p = "leaderboard.json"
+with open(p) as f:
+    data = json.load(f)
+data["timestamp"] = datetime.datetime.utcnow().strftime("%B %d, %Y – %I:%M %p UTC")
+with open(p, "w") as f:
+    json.dump(data, f, indent=2)
+PY
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add leaderboard.json
+          git commit -m "Daily refresh timestamp" || echo "No changes to commit"
+          git push
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
