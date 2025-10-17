@@ -5,8 +5,8 @@ Updates leaderboard.json daily:
 - refreshes Top 5 AI news from official feeds
 - recomputes category rankings from a weighted score
 
-Scoring = 0.30*popularity + 0.25*performance + 0.15*cost +
-          0.15*privacy + 0.15*innovation
+Scoring = 0.40*popularity + 0.25*performance + 0.10*cost +
+          0.10*privacy + 0.15*innovation
 
 Where the 5 sub-scores (0–100) come from:
 - metrics_overrides.json (your manual edits win)
@@ -68,7 +68,7 @@ DEFAULTS = {
   "Claude 3 Opus":           {"popularity":82, "performance":94, "cost":75, "privacy":85, "innovation":86},
 }
 
-WEIGHTS = {"popularity":0.30, "performance":0.25, "cost":0.15, "privacy":0.15, "innovation":0.15}
+WEIGHTS = {"popularity":0.40, "performance":0.25, "cost":0.10, "privacy":0.10, "innovation":0.15}
 
 # ---------- Utilities ----------
 def fetch(url, timeout=20):
