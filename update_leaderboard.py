@@ -33,7 +33,7 @@ FEEDS = [
   # Anthropic doesn't publish a stable RSS for all posts; skip if fails
   "https://www.anthropic.com/news/rss.xml",
 ]
-MAX_NEWS = 5
+MAX_NEWS = 10
 KEYWORDS = [
   "sora", "veo", "gemini", "claude", "gpt", "realtime", "text-to-video",
   "agent", "multimodal", "model", "release", "update", "capabilities",
