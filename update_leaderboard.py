@@ -2,7 +2,7 @@
 """
 Updates leaderboard.json daily:
 - refreshes timestamp
-- refreshes Top 5 AI news from official feeds
+- refreshes Top 6 AI news from official feeds
 - recomputes category rankings from a weighted score
 
 Scoring = 0.40*popularity + 0.25*performance + 0.10*cost +
