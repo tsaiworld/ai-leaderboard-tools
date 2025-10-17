@@ -22,7 +22,7 @@ jobs:
 
       - name: Update leaderboard JSON (timestamp, news, rankings)
         run: |
-          python3 update_leaderboard.py
+          python3 update_news.py
           echo "Updated leaderboard.json (first 60 lines):"
           head -n 60 leaderboard.json || true
 
