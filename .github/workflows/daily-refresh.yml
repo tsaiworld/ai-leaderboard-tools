@@ -27,7 +27,7 @@ jobs:
           python-version: "3.11"
 
       - name: Update leaderboard JSON (timestamp, news, rankings)
-        run: update_leaderboard.py
+        run: python update_leaderboard.py
         
 
       - name: Commit changes
