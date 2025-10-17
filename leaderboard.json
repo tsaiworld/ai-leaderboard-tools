@@ -1,5 +1,5 @@
 {
-  "timestamp": "October 17, 2025 – 04:37 PM UTC",
+  "timestamp": "October 17, 2025 – 04:45 PM UTC",
   "criteria": [
     "Popularity (30%) – adoption & sentiment",
     "Performance (25%) – reasoning / realism / accuracy",
@@ -37,6 +37,36 @@
       "date": "Thu, 18 Sep 2025 20:10:00 +0000",
       "summary": "Human-Computer Interaction and Visualization",
       "url": "https://research.google/blog/sensible-agent-a-framework-for-unobtrusive-interaction-with-proactive-ar-agents/"
+    },
+    {
+      "title": "A scalable framework for evaluating health language models",
+      "date": "Tue, 26 Aug 2025 12:34:00 +0000",
+      "summary": "Generative AI",
+      "url": "https://research.google/blog/a-scalable-framework-for-evaluating-health-language-models/"
+    },
+    {
+      "title": "From massive models to mobile magic: The tech behind YouTube real-time generative AI effects",
+      "date": "Thu, 21 Aug 2025 18:05:35 +0000",
+      "summary": "Generative AI",
+      "url": "https://research.google/blog/from-massive-models-to-mobile-magic-the-tech-behind-youtube-real-time-generative-ai-effects/"
+    },
+    {
+      "title": "MLE-STAR: A state-of-the-art machine learning engineering agent",
+      "date": "Fri, 01 Aug 2025 10:00:00 +0000",
+      "summary": "Machine Intelligence",
+      "url": "https://research.google/blog/mle-star-a-state-of-the-art-machine-learning-engineering-agents/"
+    },
+    {
+      "title": "Simulating large systems with Regression Language Models",
+      "date": "Tue, 29 Jul 2025 23:24:00 +0000",
+      "summary": "Generative AI",
+      "url": "https://research.google/blog/simulating-large-systems-with-regression-language-models/"
+    },
+    {
+      "title": "Android Earthquake Alerts: A global system for early warning",
+      "date": "Thu, 17 Jul 2025 09:34:00 +0000",
+      "summary": "Data Mining & Modeling",
+      "url": "https://research.google/blog/android-earthquake-alerts-a-global-system-for-early-warning/"
     }
   ],
   "categories": [
